@@ -53,6 +53,12 @@ Follow these steps to install and configure the project:
 2. **Access the Website**:
    - Open your browser and go to `http://localhost/MediconGroupProject` to access the Medicon Health Care Website.
 
+3. **Acess the Admin pannal**:
+   - Open your browser and go to `http://localhost/MediconGroupProject/admin.html` to access the Admin pannels.
+
+     ![image](https://github.com/user-attachments/assets/63855d75-adf7-4bbe-b6a0-77328de7944e)
+
+
 
 ## Troubleshooting
 
