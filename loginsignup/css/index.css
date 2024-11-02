@@ -1,0 +1,84 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(op.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px; /* Set a base font size for better responsiveness */
+}
+
+.nav {
+    background-color: rgb(23, 111, 218);
+    color: blanchedalmond;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: -370px;
+    height: fit-content;
+    flex: inherit;
+    align-items: flex-end;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 3em; /* Adjust the font size as needed */
+}
+
+.home {
+    margin-top: 10%;
+    padding: 20px;
+    background-color: rgb(28, 27, 27);
+    border-radius: 30px;
+    width: fit-content;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    border-width: 5px;
+    border-color: antiquewhite;
+}
+
+.home:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+p {
+    font-size: 1em; /* Adjust the font size as needed */
+}
+
+.welcome {
+    margin-left: -100px;
+    color: rgb(11, 229, 233);
+}
+
+.data {
+    margin-left: -150px;
+    padding: 30px;
+}
+
+.logout {
+    background-color: rgb(28, 27, 27);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    border-width: 5px;
+    border-color: antiquewhite;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .welcome {
+        margin-left: 0;
+    }
+
+    .data {
+        margin-left: 0;
+    }
+}

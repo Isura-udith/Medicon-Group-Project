@@ -1,0 +1,45 @@
+body{
+   
+   width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    background: linear-gradient(45deg,#310006,#473b9f,#061848,#011e37);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite ;
+    background-position: center;
+   
+}
+@keyframes color{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+
+}
+
+.signup{
+    margin-top: -60px;
+    margin-left: 30%;
+    background-color: rgba(255, 254, 254, 0.221);
+    padding: 40px;
+    border-radius: 30px;
+    width: 270px;
+
+}
+.topic{
+    margin-top: -20;
+    margin-left: 45%;
+}
+.box{
+    width: 250px;
+}
+.main{
+    background-color: rgb(21, 91, 153);
+}
+
+
+button:hover{
+    background-color: rgb(5, 181, 181);
+}
+
+

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+body {
+	background: #ebd2db;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	
+}
+
+.bgpic{
+	background :  url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg?size=626&ext=jpg&ga=GA1.2.1449535877.1690643353&semt=ais");
+	background-size:cover;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+.container {
+	padding-top: 50px;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(215, 45, 45, 0.1) !important;
+}
+
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+
+.dropbtn {
+	background-color: #04AA6D;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #3e8e41;
+  }
+  
+
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	min-width: 230px;
+	overflow: auto;
+	border: 1px solid #523fe6;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: solid #dddddd;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #dddddd;}
+  
+  .show {display: block;}
+
+  .search-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.search-input {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 200px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	max-height: 150px;
+	overflow-y: auto;
+	width: 100%;
+	
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-content a:hover {
+	background-color: #f0f0f0;
+}
+.search-input:focus {outline: 3px solid #a9caef;}

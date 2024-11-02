@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Appointment</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pro.css">
+</head>
+  <body>
+
+
+
+
+<div class="bgpic">
+
+		<div class="container">
+			
+			<div class=" bt  shadow rounded-lg d-block d-sm-flex">
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4"><b>MEET YOUR DOCTOR</b></h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>User Name</label>
+								  	<input type="text" class="form-control" value="Enter your user name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Patient full name</label>
+								  	<input type="text" class="form-control" value="K Janani Chamasha">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>E-mail</label>
+								  	<input type="email" class="form-control" value="janaa@gmail.com">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Contact number</label>
+								  	<input type="text" class="form-control" value="+94 765705252">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Select date</label>
+								  	<input type="date" class="form-control" value="2002-01-25">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Time</label>
+								  	<input type="time" class="form-control">
+								</div>
+							</div>
+							
+							<html>
+  
+    
+
+						
+                           
+							<div class="search-dropdown">
+								&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="searchInput" class="search-input" placeholder="Choose the doctor">
+								<div class="dropdown-content" id="dropdownContent">
+									
+									<a href="#">DR.RIFETH HUSSAIN RASHEED</a>
+									<a href="#">DR.Janani Chamasha</a>
+									<a href="#">DR.Nadeeja Gamlath</a>
+									<a href="#">DR.Sudath Inamaluwa</a>
+									<a href="#">DR.Siththari Dissanayake</a>
+									<a href="#">DR.Rohan Kaluvithana</a>
+									<a href="#">DR.Wajantha Herath</a>
+									<a href="#">DR.Udayanga Silva</a>
+									<a href="#">DR.Samanmali Senevirathne</a>
+									<a href="#">DR.Kirthi Gunasekara</a>
+									<a href="#">DR.Anjali Vijerathne</a>
+									<a href="#">DR.Chanaka Gunasingha</a>
+									<a href="#">DR.Anoma Withanage</a>
+									<a href="#">DR.Upeksha Hathurusinghe</a>
+									<a href="#">DR.Natasha bandara</a>
+									<a href="#">DR.Udaya Warnakula</a>
+									<a href="#">DR.Ohan Gomis</a>
+									<a href="#">DR.Gamini Jayavira</a>
+									<a href="#">DR.Nihal Aththanayaka</a>
+									<a href="#">DR.Jagath Karunarathne</a>
+									<a href="#">DR.Kalumini Weheragoda</a>
+									<a href="#">DR.Sajini Rajapaksha</a>
+									<a href="#">DR.Nishantha Jayawardhana</a>
+								</div>
+							</div>
+							
+							<script>
+								const searchInput = document.getElementById('searchInput');
+								const dropdownContent = document.getElementById('dropdownContent');
+								const options = dropdownContent.getElementsByTagName('a');
+							
+								searchInput.addEventListener('input', function () {
+									const searchTerm = searchInput.value.toLowerCase();
+							
+									for (let i = 0; i < options.length; i++) {
+										const optionText = options[i].textContent.toLowerCase();
+							
+										if (optionText.includes(searchTerm)) {
+											options[i].style.display = 'block';
+										} else {
+											options[i].style.display = 'none';
+										}
+									}
+							
+									dropdownContent.style.display = searchTerm.length > 0 ? 'block' : 'none';
+								});
+							
+								document.addEventListener('click', function (event) {
+									if (!event.target.matches('.search-input')) {
+										dropdownContent.style.display = 'none';
+									}
+								});
+							</script>
+
+							
+					  
+
+						  <br><br><br>
+							
+							<div class="col-md-12">
+								<div class="form-group">
+								  	<label>Explain your requariment</label>
+									<textarea class="form-control" rows="4">.......</textarea>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary" id="Submit">Submit</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+	<script>
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		function filterFunction() {
+		  var input, filter, ul, li, a, i;
+		  input = document.getElementById("myInput");
+		  filter = input.value.toUpperCase();
+		  div = document.getElementById("myDropdown");
+		  a = div.getElementsByTagName("a");
+		  for (i = 0; i < a.length; i++) {
+			txtValue = a[i].textContent || a[i].innerText;
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			  a[i].style.display = "";
+			} else {
+			  a[i].style.display = "none";
+			}
+		  }
+		}
+		</script>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</body>
+</html>

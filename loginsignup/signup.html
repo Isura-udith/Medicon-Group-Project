@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="signupbody">
+ 
+    <h1 class="topic">Signup</h1>
+    <div class="signup">
+        
+    <form action="process-signup.php" method="post" id="signup" nonvalidate class="forms">
+        <div>
+        <label for="name">Name</label>
+        <input class="box" type="text" id="name" name="name">
+    </div>
+
+    <div>
+        <label for="Email">Email</label>
+        <input class="box" type="email" id="Email" name="Email">
+    </div>
+
+    <div>
+        <label for="NIC">NIC No</label>
+        <input class="box" type="text" id="NIC" name="NIC">
+    </div>
+
+    <div>
+        <label for="phoneNo">Phone No</label>
+        <input class="box" type="text" id="phoneNo" name="phoneNo">
+    </div>
+
+    <div>
+        <label>Male</label><input class="box" type="radio" id="Gender" name="Gender" value="Male">
+        <label>Female</label><input class="box" type="radio" id="Gender" name="Gender" value="Female">
+    </div>
+
+    <div>
+        <label for="Password">Password</label>
+        <input class="box" type="password" id="Password" name="Password">
+    </div>
+
+
+    <div>
+        <label for="password_confirmation">Re enter Password </label>
+        <input class="box" type="password" id="password_confirmation" name="password_confirmation">
+    </div>
+<button>Sign up</button>
+<p>I already have an account <a href="login.php">login</a></p>
+    </form>
+</div>
+</body>
+</html>
